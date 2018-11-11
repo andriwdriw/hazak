@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/hover.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="icon" href="imagens/logo%20H.png" sizes="64x64"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<title>HAZAK</title>
+	<script>
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop: $(this.hash).offset().top
+			}, 600);
+		});
+	});
+	$(document).ready(function() {
+
+		$(window).scroll(function() {
+
+			if ($(this).scrollTop() > 200) {
+				$('.scrolltopo').fadeIn();
+			} else {
+				$('.scrolltopo').fadeOut();
+			}
+
+		});
+
+		$('.scrolltopo').click(function() {
+
+			$('html,body').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+
+		});
+
+	});
+</script>
+</head>
+<body>
+	<header>
+		<nav class="nav navbar-default menu-superior">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="collapse-navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html" class="hvr-underline-from-center">Home</a></li>
+						<li><a href="#sobre-nos" class="hvr-underline-from-center">Sobre nós</a></li>
+						<li><a href="#" class="hvr-underline-from-center">Produtos</a></li>
+						<li><a href="#contato" class="hvr-underline-from-center">Fale Conosco</a></li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+						<input type="text" class="form-control botao-pesquisa" placeholder="O que voce procura?">
+					</div>
+						<button type="submit" class="btn btn-default hvr-grow-shadow bnt-pesquisa">Pesquisar</button>
+						<button class="btn btn-primary botao-carrinho" type="button">Meu orçamento <span class="badge qtde-carrinho">100</span></button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+		
+	<!-- **************     PRODUTOS     ***************** -->
+	<section id="produtos" class="servicos-geral container">
+		<hr>
+		<ul class="nav nav-tabs nav-justified">
+			<li role="presentation" class="active"><a href="#">Lingerie</a></li>
+			<li role="presentation"><a href="#">Roupas infantis</a></li>
+			<li role="presentation"><a href="#">Cabide p/ embalagens</a></li>
+			<li role="presentation"><a href="#">Ganchos para embalagens</a></li>
+			<li role="presentation"><a href="#">Ganchos para meias</a></li>
+		</ul>
+		<hr>
+		<h2>Lingerie</h2>
+		<hr>
+		<div class="row sessao-produtos-geral">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				<img src="imagens/foto-produto/0001.png" alt="Cabide para gravata" style="width: 280px; height: 200px;">
+				<div class="caption info-produto">
+					<h3>Cabide para gravata</h3>
+					<form action="#">
+						<input type="number" name="Quantidade" min="1" max="5" class="botao-quantidade">
+						<button class="hvr-icon-fade botao-orcamento">Orçar</button>
+					</form>
+				</div>
+			</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				<img src="imagens/foto-produto/0002.png" alt="Cabide para gravata" style="width: 280px; height: 200px;">
+				<div class="caption info-produto">
+					<h3>Cabide para camiseta</h3>
+					<form action="#">
+						<input type="number" name="Quantidade" min="1" max="5" class="botao-quantidade">
+						<button class="hvr-icon-fade botao-orcamento">Orçar</button>
+					</form>
+				</div>
+			</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				<img src="imagens/foto-produto/0003.png" alt="Cabide para gravata" style="width: 280px; height: 200px;">
+				<div class="caption info-produto">
+					<h3>Cabide para com travas</h3>
+					<form action="#">
+						<input type="number" name="Quantidade" min="1" max="5" class="botao-quantidade">
+						<button class="hvr-icon-fade botao-orcamento">Orçar</button>
+					</form>
+				</div>
+			</div>
+			</div>
+		</div>
+		<hr>
+		<h2>Roupas infantis</h2>
+		<hr>
+		<div class="row sessao-produtos-geral">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				<img src="imagens/foto-produto/0001.png" alt="Cabide para gravata" style="width: 280px; height: 200px;">
+				<div class="caption info-produto">
+					<h3>Cabide para gravata</h3>
+					<form action="#">
+						<input type="number" name="Quantidade" min="1" max="5" class="botao-quantidade">
+						<button class="hvr-icon-fade botao-orcamento">Orçar</button>
+					</form>
+				</div>
+			</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				<img src="imagens/foto-produto/0002.png" alt="Cabide para gravata" style="width: 280px; height: 200px;">
+				<div class="caption info-produto">
+					<h3>Cabide para camiseta</h3>
+					<form action="#">
+						<input type="number" name="Quantidade" min="1" max="5" class="botao-quantidade">
+						<button class="hvr-icon-fade botao-orcamento">Orçar</button>
+					</form>
+				</div>
+			</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				<img src="imagens/foto-produto/0003.png" alt="Cabide para gravata" style="width: 280px; height: 200px;">
+				<div class="caption info-produto">
+					<h3>Cabide para com travas</h3>
+					<form action="#">
+						<input type="number" name="Quantidade" min="1" max="5" class="botao-quantidade">
+						<button class="hvr-icon-fade botao-orcamento">Orçar</button>
+					</form>
+				</div>
+			</div>
+			</div>
+		</div>		
+		
+	</section>
+	<!-- ***************     FINAL     ******************* -->
+	
+	<!-- ***************     RODAPÉ     ****************** -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<section class="col-xs-12 col-sm-6">
+					<div class="rodape">
+						<address>
+							<strong>Hazak industria comercio importação e exportação LTDA</strong><br>
+							Rua dos Italianos, 1158, Bom Retiro<br>
+							São Paulo, SP<br>
+							Tel: (11) 0000-1111 ou 2222-6789<br>
+						</address>
+						<address>
+							<a href="">E-mail: hazak@hazak.com.br</a>
+						</address>
+						<div class="mapa">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3287663161263!2d-46.64803548502303!3d-23.52067488470314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58717af4c253%3A0x19297ce838d5364c!2sR.+dos+Italianos%2C+1084+-+Bom+Retiro%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1513537727544" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>	
+				</section>	
+				<section class="col-xs-12 col-sm-6">
+					<div id="contato">
+						<h2>Contato</h2>
+						<p>Entre em contato conosco</p>
+						<form>
+							<div class="form-group">
+								<label for="contato-name">Nome:</label>
+								<input id="contato-name" type="text" placeholder="Seu nome" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="contato-email">Email:</label>
+								<div class="input-group">
+								<div class="input-group-addon">@</div>
+								<input id="contato-email" type="email" class="form-control" placeholder="Seu Email">
+								</div>
+							</div>
+							<select class="contato-select form-control">
+								<option disabled selected>Tipo de solicitação</option>
+								<option>Solicitar orçamento</option>
+								<option>Duvidas</option>
+								<option>Outros</option>
+							</select>
+							<hr>
+							<textarea class="form-control" rows="3" placeholder="Fale um pouco mais"></textarea>
+							<hr>
+							<button class="btn btn-primary" type="submit">Enviar</button>
+						</form>
+					</div>
+				</section>
+			</div>
+		</div>
+	</footer>
+	<!-- ***************     FINAL     ******************* -->
+	
+	<a href="#" class="scrolltopo"></a>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/navbar-animation-fix.js"></script>
+</body>
+
+</html>

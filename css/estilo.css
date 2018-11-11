@@ -1,0 +1,110 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.menu-superior, .navbar-brand {
+	background-color: #023264;
+	color: #1f1f1f;
+	font-weight: 800;
+	font-size: 25px;
+}
+.navbar-default .navbar-nav > li > a{
+	color: #e2e2e2;
+	font-weight: 900;
+	font-size: 20px;
+	text-align: center;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+	color: #4b4b4b;
+	background-color: rgba(229, 229, 229, 0.66);
+}
+.botao-pesquisa { font-weight: 100; width: 158px;}
+.botao-pesquisa, .bnt-pesquisa {height: 36px;margin-top: 0px;}
+.botao-carrinho { background-color: #171717; border-radius: 0px; border: 2px solid #2098d1;}
+.scrolltopo { width:40px; height:40px; position: fixed; background: url(../imagens/up-arrow.png) no-repeat; bottom:50px; right:25px; display:none; }
+.sessao-sobrenos { padding: 60px 0px;}
+.central-esquerda { float: left; width: 100%;}
+.central-esquerda img { float: left; width: 80%; margin-left: 10%; border-radius: 20px; margin-bottom: 40px; }
+.central-direita { border: 1px solid black; background-color: rgba(2, 50, 100, 0.1); text-align: center; padding: 10px 25px; }
+.central-direita p { font-size: 16px;}
+.sessao-quem-somos,.texto-produtos {
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(120,188,255,1) 50%, rgba(255,255,255,1) 100%);
+	margin-top: 60px;
+	margin-bottom: 100px;
+	border-bottom: 1px solid #171717;
+	border-top: 1px solid #171717;
+	text-align: center;
+	color: #171717;
+	font-weight: 700;
+	padding: 18px;
+	font-size: 28px;
+	letter-spacing: 10px;
+}
+.imagem-icone img {
+	align-items: center;
+	width: 50%;
+	margin: 5% 25%;
+}
+.sessao-dir img {
+	width: 90%;
+	margin: 5%;
+}
+.sessao-esq {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.sessao-esq button {
+	margin-top: 20px;
+}
+.info-produto { text-align: center;}
+.botao-quantidade {border: 2px solid black; height: 32px; }
+.botao-orcamento {background-color: #171717; color: #fff; height: 35px; border: 2px solid #2098d1;}
+.botao-conheca-linha { border-radius: 0px; border: 2px solid black; background-color: #023264; margin-top: 40px;}
+.botao-conheca-linha a { color: #fff;}
+.botao-conheca-linha:hover { background-color: #2f2f2f;}
+footer {
+	margin-top: 60px;
+	padding-bottom: 60px;
+	background-color: #023264;
+	color: #fff;
+}
+
+.rodape { margin-top: 40px;}
+.mapa { margin-left: -2%;}
+
+@media(min-width: 767px) {
+.rodape { margin-top: 10%;}
+.navbar-right { margin-right: -15px;padding: 0px;}	
+.mapa iframe { height: 225px;}	
+}
+
+@media(min-width: 992px) {
+	.menu-geral {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 50px;
+}
+	.texto-destaque {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 12%;
+	padding: 40px 0px;
+}
+	.texto-destaque h2 {
+		font-size: 60px;
+		font-weight: 800;
+	}
+	.rodape {
+		margin-top: 5%;
+	}
+	.rodape strong{
+		font-size: 25px;
+	}
+	.mapa iframe { width: 90%; height: 250px;}
+}
